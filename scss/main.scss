@@ -1,0 +1,96 @@
+/*Variables*/
+
+$robot: 'Roboto', sans-serif;
+
+
+/*animation*/
+
+.fade {
+    -webkit-animation-name: fade;
+    animation-name: fade;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {
+      opacity: 0.1;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fade {
+    from {
+      opacity: 0.1;
+    }
+    to {
+      opacity: 1;
+    }
+}
+
+/*Main CSS*/
+
+body{
+    font-family: 'Work Sans', sans-serif;
+}
+
+
+*{
+    box-sizing: border-box;
+}
+
+nav{
+    width: 50px;
+    overflow: hidden;
+    border: 1px solid #FF7A00;
+}
+
+.dropdown{
+    position: relative;
+    width: 350px;
+}
+
+.dropdown.open .dropdown-nav{
+    display: block;
+}
+
+.dropdown-label{
+    width: 50px;
+    height: 50px;
+    border: 1px solid #ff7a00;
+    cursor: pointer;
+}
+
+.dropdown-nav{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+    border: 1px solid #ff7a00;
+    cursor: pointer;
+    position: absolute;
+    width: 100%;
+}
+
+.dropdown-nav li>a{
+    text-decoration: none;
+    color: white;
+    background: #ff7b00;
+    padding: 5px 10px;
+    display: block;
+    
+}
+
+.dropdown-nav li>a:hover{
+    color: #ff7a00;
+    background-color: #ffd5ad;
+    cursor: pointer;
+}
+
+
+
+
