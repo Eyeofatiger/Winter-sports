@@ -1,7 +1,10 @@
 /*Variables*/
 
 $robot: 'Roboto', sans-serif;
-
+$bg: #D8F5FD;
+$orange: #FF7A00;
+$white: #FFFFFF;
+$blue: #004381;
 
 /*animation*/
 
@@ -36,17 +39,24 @@ $robot: 'Roboto', sans-serif;
 
 body{
   font-family: 'Work Sans', sans-serif;
+  background-color: $bg;
+  background-image: url(../images/mountain.png);
+  background-size: 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
 *{
   box-sizing: border-box;
 }
 
+/*Header*/
 /*Navbar*/
 
 .nav-container-top{
-  background-color: #FF7A00;
+  background-color: $orange;
   height: 5vw;
+  padding: 0;
 }
 
 nav{
@@ -54,7 +64,7 @@ nav{
   height: 5vw;
   overflow: hidden;
   position: relative;
-  width: 29%;
+  width: 30%;
 }
 
 .dropdown.open .dropdown-nav{
@@ -65,20 +75,13 @@ nav{
 .dropdown-label{
   width: 5vw;
   height: 5vw;
-  border-left: 3px solid #FFFFFF;
+  border-left: 3px solid $white;
   cursor: pointer;
   position: absolute;
-  right: 1px;
+  right: 0;
   top: 0;
   background-image: url(../images/arrow.png);
   background-size: 100%;
-}
-
-.dropdown-label i{
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  display: inline-block;
 }
 
 .dropdown-nav{
@@ -86,7 +89,6 @@ nav{
   margin: 0;
   padding: 0;
   display: none;
-  border: 1px solid #ff7a00;
   cursor: pointer;
   width: 100%;
   position: absolute;
@@ -96,11 +98,11 @@ nav{
 .dropdown-nav li>a{
   text-decoration: none;
   color: white;
-  background: #ff7b00;
+  background: $orange;
   display: block;
   padding: 2% 2%;
-  border-bottom: 1px solid #FFFFFF;
-  border-top: 1px solid #FFFFFF;
+  border-bottom: 1px solid $white;
+  border-top: 1px solid $white;
   font-size: 1.8vw;
   text-align: left;
 }
@@ -122,7 +124,7 @@ nav{
 }
 
 .dropdown-nav li>a:hover{
-  color: #ff7a00;
+  color: $orange;
   background-color: #ffd5ad;
   cursor: pointer;
 }
@@ -130,30 +132,202 @@ nav{
 .nav-header>h3{
   position: absolute;
   top: 14px;
-  left: 4%;
+  left: 5%;
   text-align: left;
   font: 2vw/2.1vw $robot;
-  color: #FFFFFF;
+  color: $white;
   padding: 2px;
-  border-top: 2px solid #FFFFFF;
-  border-bottom: 2px solid #FFFFFF;
+  border-top: 2px solid $white;
+  border-bottom: 2px solid $white;
 }
 
-.mountain-bg{
+/*Header images*/
+
+.snowborder{
+  position: absolute;
+  width: 50vw;
+  height: 40vw;
+  top: 21%;
+  left: 15%;
+  transform: rotate(-3deg);
+}
+
+.header-mark-text{
+  position: absolute;
+  top: 38%;
+  right: 20%;
+  width: 25vw;
+  height: 17vw;
+  background-color: $orange;
+  border-radius: 3px 3px 0px 0px;
+  opacity: 0.9;
+  color: $white;
+  font: 2.5vw/2.7vw $robot;
+}
+
+.header-mark-text p{
+  margin: 0.5% 12%;
+}
+
+.header-mark-text hr{
+  width: 20vw;
+  border: 1px solid $white;
+  height: 0;
+  margin: 8% 10%;
+}
+
+/*main*/
+
+.main-container{
+  color: $orange;
+  position: relative;
+  top: 75vw;
+  padding: 4.5vw 10vw 7vw 12vw; 
+  background-color: $bg;
+  font-size: 1.2vw;
+}
+
+.main-container h2{
+  font: bold 2.8vw $robot;
+  margin: 0 0 3vw -6.7vw;
+}
+
+.learn-more{
+  background-color: $orange;
+  color: $white;
+  font-size: 1.2vw;
+  font-weight: bold;
+  padding: 0.5vw 1.5vw;
+  display: inline-block;
+  border-radius: 1vw;
+  opacity: 0.8;
+  position: absolute;
+  right: 10vw;  
+  cursor: pointer;
+}
+
+.learn-more a{
+  color: $white;
+  text-decoration: none;
+}
+
+.row{
   width: 100%;
-  height: 100vh;
-  margin-top: 5vw;
 }
 
+.image-container{
+  position: relative;
+  overflow: hidden;
+  height: 35vw;
+  width: 55vw;
+  top: 110vw;
+  left: 1.5vw;
+}
 
+.image-container img{
+  position: absolute;
+  right: -10vw;
+  width: 50vw;
+  height: 35vw;
+}
 
+.bottom-board{
+  padding-bottom: 11vw;
+  background-image: url(../images/bg-holder.png);
+  background-size: 100%;
+  background-repeat: repeat-y;
+}
 
+.container-bottom{
+  width: 90%;
+  position: relative;
+  top: 110vw;
+  overflow: hidden;
+}
 
+.left-block-blue:hover{
+  text-decoration: none;
+  cursor: pointer;
+}
 
+.block-blue-content{
+  background-color: $blue;
+  padding: 0;
+  margin: 0 4vw 2vw;
+  width: 90%;
+}
+
+.board-figure-blue{
+  color: $white;
+  font-size: 3vw;
+  text-align: center;
+  margin: auto;
+}
+
+.board-text-blue{
+  background-color: $white;
+  color:$blue;
+  border: 5px solid $blue;
+}
+
+.board-text-blue h4, .board-text-orange h4{
+  padding-top: 0.2vw;
+  font-size: 1.2vw;
+  font-weight: bold;
+}
+
+.board-text-blue ul, .board-text-orange ul{
+  font-size: 0.9vw;
+  padding: 0;
+  margin-left: 12px;
+}
+
+.block-orange-content{
+  background-color: $orange;
+  padding: 0;
+  margin: 0 4vw 2vw;
+  width: 90%;
+}
+
+.board-figure-orange{
+  color: $white;
+  font-size: 3vw;
+  text-align: center;
+  margin: auto;
+}
+
+.board-text-orange{
+  background-color: $white;
+  color:$orange;
+  border: 5px solid $orange;
+}
+
+.cont-right-marg{
+  margin-top: 11vw;
+}
+
+.footer-mountains{
+  width: 100%;
+  position: relative;
+  top: 96vw;
+}
+
+footer{
+  position: relative;
+  top: 96vw;
+  background-color: $blue;
+  width: 100%;
+}
+
+footer p{
+  color: $white;
+  text-align: center;
+  padding: 1vw 0;
+}
 
 /*Response*/
 
-@media (min-width: 380px) and (max-width: 700px) {
+@media (min-width: 380px) and (max-width: 767px) {
   .nav-container-top{
     height: 10vw;
   }
@@ -174,14 +348,38 @@ nav{
   
   .nav-header>h3{
     font: 3.5vw/3.7vw $robot;
-    border-top: 1px solid #FFFFFF;
-    border-bottom: 1px solid #FFFFFF;
+    border-top: 1px solid $white;
+    border-bottom: 1px solid $white;
   }
 
-  .mountain-bg{
-    margin-top: 10vw;
+  .snowborder{
+    top: 15%;
+  }
+  
+  .header-mark-text{
+    top: 22%;
   }
 
+  .main-container{
+    top: 100vw;
+    font-size: 1.9vw;
+  }
+  .image-container{
+    top: 100vw;
+    left: 63%;
+  }
+
+  .board-text-blue h4, .board-text-orange h4{
+    font-size: 2.2vw;
+  }
+  
+  .board-text-blue ul, .board-text-orange ul{
+    font-size: 2vw;
+  }
+
+  .cont-right-marg{
+    margin-top: 0;
+  }
 }
 
 @media (min-width: 0px) and (max-width: 380px) {
@@ -206,12 +404,48 @@ nav{
   .nav-header>h3{
     top: 3px;
     font: 3.5vw/3.7vw $robot;
-    border-top: 1px solid #FFFFFF;
-    border-bottom: 1px solid #FFFFFF;
+    border-top: 1px solid $white;
+    border-bottom: 1px solid $white;
   }
 
-  .mountain-bg{
-    margin-top: 15vw;
+  .snowborder{
+    top: 7%;
+  }
+  
+  .header-mark-text{
+    top: 11%;
+  }
+
+  .main-container{
+    top: 80vw;
+    font-size: 2.5vw;
+  }
+
+  .image-container{
+    top: 100vw;
+    left: 65%;
+  }
+
+  .block-blue-content{
+    margin: 0 1vw 1vw;
+    width: 100%;
+  }
+
+  .block-orange-content{
+    margin: 0 1vw 1vw;
+    width: 100%;
+  }
+
+  .board-text-blue h4, .board-text-orange h4{
+    font-size: 2.2vw;
+  }
+  
+  .board-text-blue ul, .board-text-orange ul{
+    font-size: 2vw;
+  }
+
+  .cont-right-marg{
+    margin-top: 0vw;
   }
 }
 

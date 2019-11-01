@@ -1,0 +1,179 @@
+/*Variables*/
+
+$robot: 'Roboto', sans-serif;
+$bg: #D8F5FD;
+$orange: #FF7A00;
+$white: #FFFFFF;
+$blue: #004381;
+
+/*animation*/
+
+.fade-show {
+  -webkit-animation-name: fade-show;
+  animation-name: fade-show;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-name: fade-show;
+  -webkit-animation-duration: 2s;
+}
+  
+@-webkit-keyframes fade-show {
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+  
+@keyframes fade-show {
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*Main CSS*/
+
+body{
+  font-family: 'Work Sans', sans-serif;
+  background-color: $bg;
+  background-image: url(../images/mountain.png);
+  background-size: 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+/*Header*/
+/*Navbar*/
+
+.nav-container-top{
+  background-color: $orange;
+  height: 5vw;
+  padding: 0;
+}
+
+nav{
+  width: 2.5vw;
+  height: 5vw;
+  overflow: hidden;
+  position: relative;
+  width: 30%;
+}
+
+.dropdown.open .dropdown-nav{
+  display: block;
+  margin-top: 5vw;
+}
+
+.dropdown-label{
+  width: 5vw;
+  height: 5vw;
+  border-left: 3px solid $white;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-image: url(../images/arrow.png);
+  background-size: 100%;
+}
+
+.dropdown-nav{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: none;
+  cursor: pointer;
+  width: 100%;
+  position: absolute;
+  right: 0;
+}
+
+.dropdown-nav li>a{
+  text-decoration: none;
+  color: white;
+  background: $orange;
+  display: block;
+  padding: 2% 2%;
+  border-bottom: 1px solid $white;
+  border-top: 1px solid $white;
+  font-size: 1.8vw;
+  text-align: left;
+}
+
+.fa-arrow-alt-circle-right{
+  position: absolute;
+  left: 2%;
+
+}
+
+.dropdown-nav li>a>i{
+  position: relative;
+  right: 2%;
+  left: 1%
+}
+
+.sq-top{
+  transform: rotate(45deg);
+}
+
+.dropdown-nav li>a:hover{
+  color: $orange;
+  background-color: #ffd5ad;
+  cursor: pointer;
+}
+
+.nav-header>h3{
+  position: absolute;
+  top: 14px;
+  left: 5%;
+  text-align: left;
+  font: 2vw/2.1vw $robot;
+  color: $white;
+  padding: 2px;
+  border-top: 2px solid $white;
+  border-bottom: 2px solid $white;
+}
+
+/*Header images*/
+
+
+
+
+
+
+
+.footer-mountains{
+  width: 100%;
+  position: relative;
+  top: 96vw;
+}
+
+footer{
+  position: relative;
+  top: 96vw;
+  background-color: $blue;
+  width: 100%;
+}
+
+footer p{
+  color: $white;
+  text-align: center;
+  padding: 1vw 0;
+}
+
+@media (min-width: 0px) and (max-width: 380px) {
+  
+}
+
+
+
+
+
+
