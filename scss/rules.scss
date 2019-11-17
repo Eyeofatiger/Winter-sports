@@ -1,0 +1,562 @@
+/*Variables*/
+
+$robot: 'Roboto', sans-serif;
+$bg: #D8F5FD;
+$orange: #FF7A00;
+$white: #FFFFFF;
+$blue: #004381;
+
+/*animation*/
+
+.fade-show {
+  -webkit-animation-name: fade-show;
+  animation-name: fade-show;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-name: fade-show;
+  -webkit-animation-duration: 2s;
+}
+  
+@-webkit-keyframes fade-show {
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+  
+@keyframes fade-show {
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*Main CSS*/
+
+body{
+  font-family: 'Work Sans', sans-serif;
+  background-color: $bg;
+  background-image: url(../images/mountain.png);
+  background-size: 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+/*Header*/
+/*Navbar*/
+
+.nav-container-top{
+  background-color: $orange;
+  height: 5vw;
+  padding: 0;
+}
+
+nav{
+  width: 2.5vw;
+  height: 5vw;
+  overflow: hidden;
+  position: relative;
+  width: 30%;
+}
+
+.dropdown.open .dropdown-nav{
+  display: block;
+  margin-top: 5vw;
+}
+
+.dropdown-label{
+  width: 5vw;
+  height: 5vw;
+  border-left: 3px solid $white;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-image: url(../images/arrow.png);
+  background-size: 100%;
+}
+
+.dropdown-nav{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: none;
+  cursor: pointer;
+  width: 100%;
+  position: absolute;
+  right: 0;
+}
+
+.dropdown-nav li>a{
+  text-decoration: none;
+  color: white;
+  background: $orange;
+  display: block;
+  padding: 2% 2%;
+  border-bottom: 1px solid $white;
+  border-top: 1px solid $white;
+  font-size: 1.8vw;
+  text-align: left;
+}
+
+.fa-arrow-alt-circle-right{
+  position: absolute;
+  left: 2%;
+
+}
+
+.dropdown-nav li>a>i{
+  position: relative;
+  right: 2%;
+  left: 1%
+}
+
+.sq-top{
+  transform: rotate(45deg);
+}
+
+.dropdown-nav li>a:hover{
+  color: $orange;
+  background-color: #ffd5ad;
+  cursor: pointer;
+}
+
+.nav-header>h3{
+  position: absolute;
+  top: 14px;
+  left: 5%;
+  text-align: left;
+  font: 2vw/2.1vw $robot;
+  color: $white;
+  padding: 2px;
+  border-top: 2px solid $white;
+  border-bottom: 2px solid $white;
+}
+
+/*Header images*/
+
+.header-top{
+  width: 30vw;
+  height: 22vw;
+  margin: 14vw 0 0 52vw;
+  background-color: $orange;
+  color: $white;
+  padding: 3.5vw 5vw 0;
+  opacity: 0.8;
+}
+
+.header-top h2{
+  border-top: 2px solid $white;
+  border-bottom: 2px solid $white;
+  font: 2.2vw $robot;
+  margin-bottom: 2vw;
+}
+
+.header-top p{
+  font-size: 1vw;
+}
+
+.header-top a{
+  color: $orange;
+  text-decoration: none;
+  background-color: $white;
+  font-size: 1vw;
+  font-weight: bold;
+  border-radius: 2px;
+  padding: 1px 2px;
+  position: relative;
+  left: 58%;
+}
+
+.top-image-hero{
+  position: relative;
+  width: 45vw;
+  height: 35vw;
+  left: 10vw;
+  top: -25vw;
+  z-index: -1;
+}
+
+//main block
+
+.main-container-top{
+  height: 212vw; 
+  width: 100%;
+  border-right: 98.8vw solid $bg;
+  border-top: 12vw solid transparent;
+  border-bottom: 12vw solid transparent;
+  padding: 0;
+  margin: -20vw 0 0;
+}
+
+.row{
+  margin: 0;
+}
+
+.main-col-left{
+  box-sizing: content-box;
+  position: absolute;
+  width: 35%;
+  left: 7vw;
+  color: $orange;
+  padding: 7vw 3vw 1vw 7vw;
+}
+
+.main-col-left h2{
+  font: bold 2.8vw $robot;
+  margin: 0 0 2vw -7vw;
+}
+
+.main-col-left h2>span{
+  margin-left: 7vw;
+}
+
+.main-col-left>p{
+  font-size: 1.5vw;
+  padding-right: 4vw;
+}
+
+.right-signs{
+  box-sizing: content-box;
+  color: $orange;
+  background-color: $white;
+  position: absolute;
+  width: 30%;
+  right: 5vw;
+  padding: 5vw;
+  margin-top: 7vw;
+  border-radius: 2%;
+  box-shadow: 1px 3px 5px 3px lightgrey;
+  font-size: 1.1vw;
+  text-align: center;
+}
+
+.right-signs th{
+  padding: 0.7vw 0;
+}
+
+.right-signs td{
+  width: 40%;
+  padding: 0.5vw;
+}
+
+.circle{
+  display: inline-block;
+  height: 3vw;
+  width: 3vw;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.squere{
+  display: inline-block;
+  height: 3vw;
+  width: 3vw;
+  border: 1px solid black;
+}
+
+.rhomb{
+  display: inline-block;
+  height: 3vw;
+  width: 3vw;
+  border: 1px solid black;
+  transform: rotate(45deg);
+  margin:0 0.4vw 0.4vw;
+}
+
+.green{
+  background-color: green;
+}
+
+.blue{
+  background-color: blue;
+}
+
+.red{
+  background-color: red;
+}
+
+.yellow{
+  background-color: yellow;
+}
+
+.black{
+  background-color: black;
+}
+
+.main-numbers{
+  box-sizing: content-box;
+  color: $orange;
+}
+
+.main-numbers div{
+  position: absolute;
+  width: 32%;
+}
+
+.main-numbers span{
+  opacity: 0.3;
+  font: 900 9vw $robot;
+  position: relative;
+  top: 7vw;
+  left: -3.5vw;
+}
+
+.main-numbers h4{
+  font-size: 1.8vw;
+  font-weight: bold;
+}
+
+.main-numbers p{
+  font-size: 1.1vw;
+  letter-spacing: 0.9;
+}
+
+.block-1{  
+  top: 82vw;
+  left: 14vw;
+}
+
+.block-2{
+  top: 96vw;
+  left: 14vw;
+}
+
+.block-3{
+  top: 111vw;
+  left: 14vw;
+}
+
+.block-4{
+  top: 125vw;
+  left: 32vw;
+}
+
+.block-5{
+  top: 142vw;
+  left: 47vw;
+}
+
+.block-6{
+  top: 156vw;
+  left: 62vw;
+}
+
+.block-7{
+  top: 173vw;
+  left: 62vw;
+}
+
+.block-8{
+  top: 187vw;
+  left: 47vw;
+}
+
+.block-9{
+  top: 201vw;
+  left: 32vw;
+}
+
+.block-10{
+  top: 213vw;
+  left: 14vw;
+}
+
+.bold-block-bottom{
+  top: 237vw;
+  left: 14vw;
+  font-size: 2.5vw;
+}
+
+.signs-left{
+  width: 50vw;
+  height: 50vw;
+  margin: 92vw 0 0 -13vw;
+}
+
+.image-right-bottom{
+  width: 40vw;
+  height: 60vw;
+  overflow: hidden;
+  position: absolute;
+  top: 230vw;
+  right: 0;
+}
+
+.image-right-bottom img{
+  width: 45vw;
+  height: 50vw;
+}
+
+.main-container-bottom{
+  height: 137vw; 
+  width: 100%;
+  border-left: 98.8vw solid $white;
+  border-top: 12vw solid transparent;
+  border-bottom: 12vw solid transparent;
+  padding: 0;
+  margin: -15vw 0 0;
+}
+
+
+
+
+
+
+/*boards*/
+
+
+.bottom-board{
+  padding-bottom: 15vw;
+  background-image: url(../images/bg-holder.png);
+  background-size: 100%;
+  background-repeat: repeat-y;
+}
+
+.container-bottom{
+  width: 90%;
+  position: relative;
+  top: 5vw;
+  overflow: hidden;
+}
+
+.left-block-blue:hover{
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.block-blue-content{
+  background-color: $blue;
+  padding: 0;
+  margin: 0 4vw 2vw;
+  width: 90%;
+}
+
+.board-figure-blue{
+  color: $white;
+  font-size: 3vw;
+  text-align: center;
+  margin: auto;
+}
+
+.board-text-blue{
+  background-color: $white;
+  color:$blue;
+  border: 5px solid $blue;
+}
+
+.board-text-blue h4, .board-text-orange h4{
+  padding-top: 0.2vw;
+  font-size: 1.2vw;
+  font-weight: bold;
+}
+
+.board-text-blue ul, .board-text-orange ul{
+  font-size: 0.9vw;
+  padding: 0;
+  margin-left: 12px;
+}
+
+.block-orange-content{
+  background-color: $orange;
+  padding: 0;
+  margin: 0 4vw 2vw;
+  width: 90%;
+}
+
+.board-figure-orange{
+  color: $white;
+  font-size: 3vw;
+  text-align: center;
+  margin: auto;
+}
+
+.board-text-orange{
+  background-color: $white;
+  color:$orange;
+  border: 5px solid $orange;
+}
+
+.footer-mountains{
+  margin-top: -10vw;
+  width: 100%;
+  position: relative;
+  top: 1.5vw;
+}
+
+footer{
+  position: relative;
+  top: 1.5vw;
+  background-color: $blue;
+  width: 100%;
+}
+
+footer p{
+  color: $white;
+  text-align: center;
+  padding: 1vw 0;
+  margin: 0;
+}
+
+/*Response*/
+
+@media (min-width: 701px) and (max-width: 875px){
+
+}
+
+@media (min-width: 50px) and (max-width: 700px) {
+  .nav-container-top{
+    height: 10vw;
+  }
+
+  nav{
+    width: 5vw;
+    height: 10vw;
+  }
+  
+  .dropdown.open .dropdown-nav{
+    margin-top: 10vw;
+  }
+  
+  .dropdown-label{
+    width: 10vw;
+    height: 10vw;
+  }
+  
+  .nav-header>h3{
+    top: 2vw;
+    font: 3.5vw/3.7vw $robot;
+    border-top: 1px solid $white;
+    border-bottom: 1px solid $white;
+  }
+  
+  /*Header images*/
+
+
+
+/*boards*/
+
+.board-text-blue{
+  padding-bottom: 5vw;
+}
+
+.board-text-blue h4, .board-text-orange h4{
+  font-size: 2.5vw;
+}
+
+.board-text-blue ul, .board-text-orange ul{
+  font-size: 2vw;
+}
+
+footer p{
+  font-size: 3vw;
+}
+}

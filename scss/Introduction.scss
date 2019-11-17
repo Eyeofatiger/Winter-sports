@@ -188,7 +188,7 @@ nav{
 .main-container-top{
   height: 125vw; 
   width: 100%;
-  border-left: 99.8vw solid $bg;
+  border-left: 98.8vw solid $bg;
   border-top: 12vw solid transparent;
   border-bottom: 12vw solid transparent;
   padding: 0;
@@ -278,7 +278,7 @@ nav{
 .main-container-bottom{
   height: 137vw; 
   width: 100%;
-  border-right: 99.8vw solid $white;
+  border-right: 98.8vw solid $white;
   border-top: 12vw solid transparent;
   border-bottom: 12vw solid transparent;
   padding: 0;
@@ -514,9 +514,28 @@ footer p{
 
 /*Response*/
 
+@media (min-width: 875px) and (max-width: 1360px){
+
+  .main-container-top{
+    border-left: 98vw solid $bg;
+  }
+
+  .main-container-bottom{
+    border-right: 98vw solid $white;
+  }
+}
+
 @media (min-width: 701px) and (max-width: 875px){
   .header-top{
     height: 35vw;
+  }
+
+  .main-container-top{
+    border-left: 97.5vw solid $bg;
+  }
+
+  .main-container-bottom{
+    border-right: 97.5vw solid $white;
   }
 }
 
@@ -580,6 +599,7 @@ footer p{
 .main-container-top{
   height: 345vw; 
   margin: -5vw 0 0;
+  border-left: 95.7vw solid $bg;
 }
 
 .main-col-left{
@@ -638,6 +658,7 @@ footer p{
 .main-container-bottom{
   height: 350vw;  
   margin: -12vw 0 0;
+  border-right: 95.7vw solid $white;
 }
 
 .main-bottom-left{
