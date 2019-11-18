@@ -188,7 +188,7 @@ nav{
 //main block
 
 .main-container-top{
-  height: 212vw; 
+  height: 222vw; 
   width: 100%;
   border-right: 98.8vw solid $bg;
   border-top: 12vw solid transparent;
@@ -396,8 +396,10 @@ nav{
   height: 50vw;
 }
 
+//white block
+
 .main-container-bottom{
-  height: 137vw; 
+  height: 150vw; 
   width: 100%;
   border-left: 98.8vw solid $white;
   border-top: 12vw solid transparent;
@@ -406,9 +408,90 @@ nav{
   margin: -15vw 0 0;
 }
 
+.main-bottom-left{
+  box-sizing: content-box;
+  position: absolute;
+  width: 35%;
+  left: 7vw;
+  color: $orange;
+  padding: 0 3vw 1vw 7vw;
+  margin-top: -2vw;
+}
 
+.main-bottom-left h2{
+  font: bold 2.8vw $robot;
+  margin: 0 0 2vw -7vw;
+}
 
+.main-bottom-left>p{
+  font-size: 1.1vw;
+  padding-right: 4vw;
+}
 
+.top-bold-block h4{
+  font-size: 1.8vw;
+  font-weight: 900;
+  width: 92%;
+  padding-top: 2vw;
+}
+
+.circle-orange{
+  display: inline-block;
+  width: 2vw;
+  height: 2vw;
+  border-radius: 50%;
+  background-color: $orange;
+  opacity: 0.6;
+}
+
+.keep-mind{
+  box-sizing: content-box;
+  position: absolute;
+  left: 7vw;
+  width: 79%;
+  color: $orange;
+  padding: 45vw 3vw 1vw 7vw;
+  font-size: 1.2vw;
+}
+
+.keep-mind div{
+  width: 30%;
+  margin-top: 3vw;
+}
+
+.keep-mind p{
+  display: inline-block;
+  width: 95%;
+}
+
+.point-bottom{
+  margin: 0 2vw -1.5vw -4.5vw;
+}
+
+.point-middle{
+  margin: 0 2vw 0 -4.5vw;
+}
+
+.point-top{
+  display: block;
+  margin: -0.5vw 1.5vw 0 -3.5vw;
+}
+
+.mind-second{
+  margin: 1vw 0 0 25vw;
+}
+
+.mind-third{
+  margin: 1vw 0 0 50vw;
+}
+
+.mind-fourth{
+  margin: 3vw 0 0 50vw;
+}
+
+.mind-fifth{
+  margin: 1vw 0 0 25vw;
+}
 
 
 /*boards*/
@@ -508,11 +591,27 @@ footer p{
 
 /*Response*/
 
-@media (min-width: 701px) and (max-width: 875px){
+@media (min-width: 1501px){
+  .main-container-top{
+    border-right: 99.2vw solid $bg;
+  }
 
+  .main-container-bottom{
+    border-left: 99.2vw solid $white;
+  }
 }
 
-@media (min-width: 50px) and (max-width: 700px) {
+@media (min-width: 750px) and (max-width: 1075px){
+  .main-container-top{
+    border-right: 97.5vw solid $bg;
+  }
+
+  .main-container-bottom{
+    border-left: 97.5vw solid $white;
+  }
+}
+
+@media (min-width: 50px) and (max-width: 750px) {
   .nav-container-top{
     height: 10vw;
   }
@@ -538,9 +637,196 @@ footer p{
     border-bottom: 1px solid $white;
   }
   
-  /*Header images*/
+/*Header images*/
 
+.header-top{
+  width: 40vw;
+  height: 30vw;
+  margin: 20vw 0 0 52vw;
+}
 
+.header-top h2{
+  font: 3vw $robot;
+}
+
+.header-top p{
+  font-size: 1.5vw;
+}
+
+.header-top a{
+  font-size: 1.5vw;
+
+}
+
+.top-image-hero{
+  width: 52vw;
+  height: 42vw;
+  top: -35vw;
+  left: 3vw
+}
+
+//main block
+
+.main-container-top{
+  height: 352vw; 
+  border-right: 95.7vw solid $bg;
+}
+
+.main-col-left{
+  width: 75%;
+  padding: 5vw 3vw 1vw 7vw;
+}
+
+.main-col-left h2{
+  font: bold 3.5vw $robot;
+}
+
+.main-col-left h2>span{
+  margin-left: 0.5vw;
+}
+
+.main-col-left>p{
+  font-size: 2.5vw;
+}
+
+.right-signs{
+  width: 50%;
+  right: 22vw;
+  font-size: 1.8vw;
+  text-align: center;
+  margin-top: 20vw;
+}
+
+.circle{
+  height: 5vw;
+  width: 5vw;
+}
+
+.squere{
+  height: 5vw;
+  width: 5vw;
+}
+
+.rhomb{
+  height: 4.8vw;
+  width: 4.8vw;
+  margin:0 0.7vw 0.7vw;
+}
+
+.main-numbers div{
+  margin-top: 85vw;
+  width: 52%;
+}
+
+.main-numbers span{
+  font: 900 12vw $robot;
+  top: 11vw;
+  left: -5vw;
+}
+
+.main-numbers h4{
+  font-size: 3vw;
+}
+
+.main-numbers p{
+  font-size: 1.7vw;
+  letter-spacing: 1;
+}
+
+.block-2{
+  top: 101vw;
+}
+
+.block-3{
+  top: 122vw;
+}
+
+.block-4{
+  top: 142vw;
+}
+
+.block-5{
+  top: 168vw;
+}
+
+.block-6{
+  top: 188vw;
+  left: 47vw;
+}
+
+.block-7{
+  top: 210vw;
+  left: 47vw;
+}
+
+.block-8{
+  top: 227vw;
+  left: 32vw;
+}
+
+.block-9{
+  top: 247vw;
+  left: 14vw;
+}
+
+.block-10{
+  top: 263vw;
+}
+
+.bold-block-bottom{
+  top: 295vw;
+}
+
+.signs-left{
+  width: 50vw;
+  height: 50vw;
+  margin: 185vw 0 0 -13vw;
+}
+
+.image-right-bottom{
+  width: 50vw;
+  height: 70vw;
+  top: 395vw;
+}
+
+.image-right-bottom img{
+  width: 55vw;
+  height: 60vw;
+}
+
+//white block
+
+.main-container-bottom{
+  height: 207vw; 
+  border-left: 95.7vw solid $white;
+}
+
+.main-bottom-left{
+  width: 40%;
+  left: 5vw;
+}
+
+.main-bottom-left h2{
+  font: bold 3vw $robot;
+}
+
+.main-bottom-left>p{
+  font-size: 1.5vw;
+}
+
+.circle-orange{
+  width: 3vw;
+  height: 3vw;
+}
+
+.keep-mind{
+  padding: 62vw 3vw 1vw 5vw;
+  font-size: 1.7vw;
+}
+
+.keep-mind div{
+  width: 40%;
+}
 
 /*boards*/
 
