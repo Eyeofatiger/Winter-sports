@@ -1,1 +1,1 @@
-# Winter-sports guide
+# Winter-sports safety guide
